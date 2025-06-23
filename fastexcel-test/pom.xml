@@ -16,7 +16,6 @@
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
-        <maven.surefire.plugin.include.scope>/cn/idev/excel/test/**/*.java</maven.surefire.plugin.include.scope>
     </properties>
 
     <dependencies>
@@ -72,7 +71,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <includes>
-                        <include>${maven.surefire.plugin.include.scope}</include>
+                        <include>/cn/idev/excel/test/core/**/*.java</include>
                     </includes>
                     <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
