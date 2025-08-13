@@ -3,15 +3,15 @@ id: 'head'
 title: 'Head'
 ---
 
-# 表头
-本章节将介绍写入 Excel 中的表头数据。
+# Headers
+This chapter introduces how to write header data in Excel.
 
-## 复杂头写入
+## Complex Header Writing
 
-### 概述
-支持设置多级表头，通过 `@ExcelProperty` 注解指定主标题和子标题。
+### Overview
+Supports setting multi-level headers by specifying main titles and subtitles through the `@ExcelProperty` annotation.
 
-### POJO类
+### POJO Class
 ```java
 @Getter
 @Setter
@@ -26,7 +26,7 @@ public class ComplexHeadData {
 }
 ```
 
-### 代码示例
+### Code Example
 ```java
 @Test
 public void complexHeadWrite() {
@@ -37,17 +37,17 @@ public void complexHeadWrite() {
 }
 ```
 
-### 结果
+### Result
 ![img](/img/docs/write/complexHeadWrite.png)
 
 ---
 
-## 动态头写入
+## Dynamic Header Writing
 
-### 概述
-实时生成动态表头，适用于表头内容动态变化的场景。
+### Overview
+Generate dynamic headers in real-time, suitable for scenarios where header content changes dynamically.
 
-### 代码示例
+### Code Example
 ```java
 @Test
 public void dynamicHeadWrite() {
@@ -65,5 +65,5 @@ public void dynamicHeadWrite() {
 }
 ```
 
-### 结果
+### Result
 ![img](/img/docs/write/dynamicHeadWrite.png)
