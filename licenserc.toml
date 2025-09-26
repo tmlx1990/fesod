@@ -15,6 +15,17 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ignoredBuiltDependencies:
-  - core-js
-  - core-js-pure
+headerPath = "Apache-2.0-ASF.txt"
+
+includes = [
+    '**/*.css',
+    '**/*.java',
+    '**/*.js',
+    '**/*.jsx',
+    '**/*.ts',
+    '**/*.tsx',
+    '**/*.xml',
+    '**/*.yml',
+    '**/*.yaml',
+    '**/*.toml',
+]
