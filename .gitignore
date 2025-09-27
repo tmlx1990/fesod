@@ -1,4 +1,5 @@
 .idea/
+.vscode/
 */.settings/
 *.idea
 .DS_Store
@@ -16,4 +17,23 @@ output/
 .flattened-pom.xml
 dependency-reduced-pom.xml
 
+
 /.mvn/wrapper/maven-wrapper.jar
+
+# website
+website/node_modules
+website/build
+website/.docusaurus
+website/.cache-loader
+website/.env.local
+website/.env.development.local
+website/.env.test.local
+website/.env.production.local
+website/npm-debug.log*
+website/yarn-debug.log*
+website/yarn-error.log*
+
+# fuzzing
+**/.cifuzz-corpus/
+**/fuzz_corpus/
+**/resources/**/fuzz/*Inputs/
